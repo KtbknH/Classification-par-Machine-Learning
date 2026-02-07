@@ -63,9 +63,7 @@ Les premiers résultats affichaient des accuracy de 99–100%, ce qui est anorma
 
 ### Identification de la cause : variable "Numero"
 
-Le widget **Rank** a révélé que `Numero` (simple identifiant de ligne) dominait le classement avec un Information Gain de 0.722 :
-
-![Ranking des variables](newrank.png)
+Le widget **Rank** a révélé que `Numero` (simple identifiant de ligne) dominait le classement avec un Information Gain de 0.722 
 
 Cette variable est un compteur séquentiel sans aucune relation causale avec le contenu des emails. Le modèle mémorisait les numéros au lieu d'apprendre les vrais patterns.
 
@@ -104,8 +102,6 @@ Cette variable est un compteur séquentiel sans aucune relation causale avec le 
 ## Résultats APRÈS correction
 
 ### Test and Score corrigé
-
-![Test and Score APRÈS correction](newTestandScore.png)
 
 | Modèle | AUC | Accuracy | F1 | Precision | Recall | MCC |
 |--------|-----|----------|----|-----------|--------|-----|
